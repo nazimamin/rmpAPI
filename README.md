@@ -12,7 +12,7 @@ A chrome extension that queries professors' ratings from Rate My Professors's we
 Backend [https://ratesbu.herokuapp.com/][1] parses html from  [http://www.ratemyprofessors.com/][2] and returns as JSON
 
 ##Example POST request##
-
+```javasript
          {
          "school": "Stony Brook University",
          "comments": false,
@@ -20,9 +20,9 @@ Backend [https://ratesbu.herokuapp.com/][1] parses html from  [http://www.ratemy
                   "names": ["Paul Fodor"]
           }]
          }
-
+```
 ####or####
-
+```javasript
         {
         "school": "ANY SCHOOL NAME",
         "comments": true,
@@ -31,8 +31,9 @@ Backend [https://ratesbu.herokuapp.com/][1] parses html from  [http://www.ratemy
             "names": ["Paul Fodor", "Chelsea Kennedy"]
         }]
     }
+    ```
 ####or####
-
+```javasript
     {
          "school": "Stony Brook University",
         "comments": false,
@@ -45,11 +46,12 @@ Backend [https://ratesbu.herokuapp.com/][1] parses html from  [http://www.ratemy
         }]
     }
 
-
+```
 
 ##Example Response##
  
  Response with "false" flag
+ ```javasript
  ---
       {
     "prof": [
@@ -70,9 +72,9 @@ Backend [https://ratesbu.herokuapp.com/][1] parses html from  [http://www.ratemy
         }
     ]
     }
-    
+  ```  
  Response with "true" flag
-     
+  ```javasript   
   ---
     {
     "prof": [
@@ -128,7 +130,7 @@ Backend [https://ratesbu.herokuapp.com/][1] parses html from  [http://www.ratemy
         }
     ]
 }
-
+```
 
   [1]: https://ratesbu.herokuapp.com/
   [2]: http://www.ratemyprofessors.com/
