@@ -54,7 +54,7 @@ pyOpenSSL==17.5.0
 pyparsing==2.0.1
 python-dateutil==1.5
 pytz==2013.7
-PyYAML==3.11
+PyYAML==4.2b1
 requests==2.20.0
 scipy==0.13.0b1
 six==1.4.1
